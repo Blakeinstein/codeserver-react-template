@@ -8,5 +8,6 @@ export default defineConfig({
     port: 1234,
     strictPort: true,
     open: false
-  }
+  },
+  base: "/proxy/1234/"
 })

@@ -20,7 +20,7 @@
         "run",
         "dev"
       ],
-      "dependsOn": ["npm install"]
+      "dependsOn": ["npm install", "kill 1234"]
     },
     {
       "label": "npm install",
@@ -29,6 +29,15 @@
       "args": [
         "install"
       ],
+    },
+    {
+      "label": "kill 1234",
+      "type": "shell",
+      "command": "npx",
+      "args": [
+        "kill-port",
+        "1234"
+      ]
     }
   ]
 }

@@ -4,17 +4,31 @@
   "version": "2.0.0",
   "tasks": [
     {
+      "label": "start",
+      "dependsOn": ["npm run dev"],
+      "problemMatcher": [],
+      "runOptions": {
+        "runOn": "folderOpen"
+      },
+      "auto": true
+    },
+    {
+      "label": "npm run dev",
+      "type": "shell",
+      "command": "npm",
+      "args": [
+        "run",
+        "dev"
+      ],
+      "dependsOn": ["npm install"]
+    },
+    {
       "label": "npm install",
       "type": "shell",
       "command": "npm",
       "args": [
         "install"
       ],
-      "problemMatcher": [],
-      "runOptions": {
-        "runOn": "folderOpen"
-      },
-      "auto": true
     }
   ]
 }

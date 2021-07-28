@@ -11,7 +11,7 @@
         "runOn": "folderOpen"
       },
       "presentation": {
-        "reveal": "never"
+        "reveal": "silent"
       },
       "auto": true
     },
@@ -41,6 +41,13 @@
         "kill-port",
         "1234"
       ]
-    }
+    },
+    {
+      "label": "terminal",
+      "type": "shell",
+      "command": "bash",
+      "args": []
+      ]
+    },
   ]
 }

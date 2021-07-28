@@ -5,7 +5,7 @@
   "tasks": [
     {
       "label": "start",
-      "dependsOn": ["npm run dev"],
+      "dependsOn": ["npm install"],
       "problemMatcher": [],
       "runOptions": {
         "runOn": "folderOpen"

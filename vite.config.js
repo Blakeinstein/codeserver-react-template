@@ -5,11 +5,18 @@ import reactRefresh from '@vitejs/plugin-react-refresh'
 export default defineConfig({
   plugins: [reactRefresh()],
   server: {
-    port: 1234,
-    strictPort: true,
-    open: false
+    port: 8081,
+    open: false,
+    https: true,
+    cors: {
+      origin: "*"
+    },
+    hmr: {
+      host: process.env.PUBLIC_URL,
+      path: '/sockjs-node'
+    }
   },
   fs: {
     strict: true,
-  }
+  },
 })

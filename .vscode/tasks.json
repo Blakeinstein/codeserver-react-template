@@ -11,19 +11,11 @@
         "runOn": "folderOpen"
       },
       "presentation": {
-        "reveal": "silent"
+        "reveal": "silent",
+        "clear": true,
+        "showReuseMessage": false
       },
       "auto": true
-    },
-    {
-      "label": "npm run dev",
-      "type": "shell",
-      "command": "npm",
-      "args": [
-        "run",
-        "dev"
-      ],
-      "dependsOn": ["npm install", "kill 1234"]
     },
     {
       "label": "npm install",
@@ -32,22 +24,6 @@
       "args": [
         "install"
       ],
-    },
-    {
-      "label": "kill 1234",
-      "type": "shell",
-      "command": "npx",
-      "args": [
-        "kill-port",
-        "1234"
-      ]
-    },
-    {
-      "label": "terminal",
-      "type": "shell",
-      "command": "bash",
-      "args": []
-      ]
-    },
+    }
   ]
 }

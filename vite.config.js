@@ -8,7 +8,7 @@ export default defineConfig({
     port: 8081,
     open: false,
     cors: {
-      origin: "/*/"
+      origin: '*'
     },
     hmr: {
       port: 8080,

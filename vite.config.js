@@ -7,15 +7,15 @@ export default defineConfig({
   server: {
     port: 8081,
     open: false,
-    https: true,
     cors: {
-      origin: "*"
+      origin: "/*/"
     },
     hmr: {
-      host: process.env.PUBLIC_URL,
-      path: '/sockjs-node'
+      port: 8080,
+      path: 'sockjs-node'
     }
   },
+  base: "/proxy/8081/",
   fs: {
     strict: true,
   },
